@@ -1,0 +1,290 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Card principal */
+.lead-magnet-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Headline */
+.headline {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.headline .highlight {
+    color: #667eea;
+}
+
+/* Sub-headline */
+.sub-headline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Preview da imagem */
+.pdf-preview {
+    margin: 30px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #667eea;
+}
+
+.pdf-preview-content {
+    text-align: center;
+}
+
+.pdf-icon {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.pdf-preview-text {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Formulário */
+.lead-form {
+    margin: 30px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin: 25px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 4px;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Botão CTA */
+.cta-button {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* Benefits list */
+.benefits-list {
+    margin-top: 40px;
+    text-align: left;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.benefits-list h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.benefit-item:last-child {
+    margin-bottom: 0;
+}
+
+.benefit-icon {
+    color: #28a745;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Trust badges */
+.trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.trust-item-icon {
+    font-size: 1.2rem;
+}
+
+/* Privacy notice */
+.privacy-notice {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+}
+
+.privacy-notice a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.privacy-notice a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lead-magnet-card {
+        padding: 30px 25px;
+    }
+
+    .headline {
+        font-size: 1.7rem;
+    }
+
+    .sub-headline {
+        font-size: 1.05rem;
+    }
+
+    .pdf-preview {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .pdf-icon {
+        font-size: 3.5rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 16px 30px;
+    }
+
+    .trust-indicators {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .sub-headline {
+        font-size: 1rem;
+    }
+
+    .lead-magnet-card {
+        padding: 25px 20px;
+    }
+}

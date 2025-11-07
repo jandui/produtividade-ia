@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixe Grátis: 10 Tarefas que Você Pode Automatizar Hoje com IA</title>
+    <meta name="description" content="Checklist gratuito com 10 tarefas práticas para automatizar com IA e economizar 10+ horas por semana. Baixe agora!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Baixe Grátis: 10 Tarefas que Você Pode Automatizar Hoje com IA">
+    <meta property="og:description" content="E economize 10+ horas por semana (sem precisar ser expert em tecnologia)">
+
+    <link rel="stylesheet" href="/css/checklist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lead-magnet-card">
+
+            <!-- Headline -->
+            <h1 class="headline">
+                Baixe Grátis: <span class="highlight">10 Tarefas que Você Pode Automatizar Hoje com IA</span>
+            </h1>
+
+            <!-- Sub-headline -->
+            <p class="sub-headline">
+                E economize 10+ horas por semana (sem precisar ser expert em tecnologia)
+            </p>
+
+            <!-- Preview do PDF -->
+            <div class="pdf-preview">
+                <div class="pdf-preview-content">
+                    <img src="/images/produtividade.png" alt="Preview do Checklist" style="max-width: 100%; height: auto;"> 
+                </div>
+            </div>
+
+            <!-- Formulário -->
+            <form action="/checklist/submit" method="POST" class="lead-form">
+
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Seu Melhor Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="checkbox-group">
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                        value="sim"
+                        checked
+                    >
+                    <label for="newsletter">
+                        Quero receber dicas exclusivas de produtividade com IA (você pode cancelar a qualquer momento)
+                    </label>
+                </div>
+
+                <button type="submit" class="cta-button">
+                    📥 QUERO MEU CHECKLIST GRATUITO
+                </button>
+
+            </form>
+
+            <!-- Benefits List -->
+            <div class="benefits-list">
+                <h3>O que você vai receber:</h3>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span><strong>10 tarefas práticas</strong> para automatizar hoje mesmo</span>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span><strong>Ferramentas gratuitas</strong> indicadas para cada tarefa</span>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span><strong>Prompts prontos</strong> para copiar e colar</span>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span><strong>Tempo economizado</strong> por tarefa calculado</span>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span><strong>100% gratuito</strong>, sem pegadinhas</span>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <span class="trust-item-icon">🔒</span>
+                    <span>100% Seguro</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-item-icon">📧</span>
+                    <span>Sem Spam</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-item-icon">⚡</span>
+                    <span>Download Imediato</span>
+                </div>
+            </div>
+
+            <!-- Privacy Notice -->
+            <p class="privacy-notice">
+                Seus dados estão protegidos. Leia nossa <a href="#">Política de Privacidade</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        // Validação do formulário
+        document.querySelector('.lead-form').addEventListener('submit', function(e) {
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+
+            if (!nome || !email) {
+                e.preventDefault();
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return false;
+            }
+
+            // Validação básica de email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('Por favor, insira um email válido.');
+                return false;
+            }
+        });
+    </script>
+
+</body>
+</html>

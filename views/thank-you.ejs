@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! Seu Checklist Está a Caminho</title>
+    <meta name="description" content="Obrigado por baixar o checklist. Confira seu email!">
+
+    <link rel="stylesheet" href="/css/checklist.css">
+
+    <style>
+        /* Estilos adicionais para página de obrigado */
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            display: block;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .success-message {
+            margin: 30px 0;
+        }
+
+        .success-message h2 {
+            color: #28a745;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .success-message p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .email-check-box {
+            background: #fff9e6;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .email-check-box h3 {
+            color: #856404;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .email-check-box p {
+            color: #856404;
+            margin-bottom: 8px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 20px 0;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+        }
+
+        .download-button:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(40, 167, 69, 0.4);
+        }
+
+        .upsell-section {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px dashed #e0e0e0;
+        }
+
+        .upsell-section h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .upsell-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .upsell-price {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .upsell-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .upsell-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-share {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .social-share h4 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .next-steps {
+            text-align: left;
+            margin: 30px 0;
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+
+        .next-steps h3 {
+            color: #2e7d32;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .step-number {
+            background: #28a745;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            color: #2e7d32;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lead-magnet-card">
+
+            <!-- Success Icon -->
+            <span class="success-icon">✅</span>
+
+            <!-- Success Message -->
+            <div class="success-message">
+                <h2>Parabéns! Você está no caminho certo!</h2>
+                <p>
+                    Seu checklist <strong>"10 Tarefas que Você Pode Automatizar Hoje com IA"</strong>
+                    foi enviado para o seu email.
+                </p>
+            </div>
+
+            <!-- Email Check Box -->
+            <div class="email-check-box">
+                <h3>📧 Importante: Verifique seu email agora!</h3>
+                <p>✓ Confira sua caixa de entrada</p>
+                <p>✓ Se não encontrar, verifique a pasta de SPAM ou Promoções</p>
+                <p>✓ Adicione nosso email aos seus contatos para não perder nenhuma dica</p>
+            </div>
+
+            <!-- Download alternativo -->
+            <div style="margin: 25px 0;">
+                <p style="color: #666; margin-bottom: 15px;">
+                    Não quer esperar? Baixe seu checklist agora mesmo:
+                </p>
+                <a href="/downloads/checklist-10-tarefas-ia.pdf" class="download-button" download>
+                    📥 BAIXAR CHECKLIST AGORA
+                </a>
+                <p style="font-size: 0.85rem; color: #888; margin-top: 10px;">
+                    (O link também foi enviado para seu email)
+                </p>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="next-steps">
+                <h3>🚀 Próximos Passos:</h3>
+
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Baixe e leia o checklist</span>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Escolha 1-2 tarefas para começar hoje</span>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Use os prompts prontos fornecidos</span>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <span class="step-text">Meça o tempo economizado</span>
+                </div>
+            </div>
+
+            <!-- Upsell Section -->
+            <div class="upsell-section">
+                <h3>🎯 Quer Ir Além do Checklist?</h3>
+                <p class="upsell-text">
+                    Você acabou de descobrir <strong>10 tarefas</strong> que pode automatizar com IA.<br>
+                    Mas e se você pudesse ter acesso a <strong>+100 prompts prontos</strong> e dominar
+                    completamente a IA para multiplicar sua produtividade?
+                </p>
+
+                <p class="upsell-text">
+                    <strong>Nosso ebook completo "Produtividade Exponencial"</strong> vai muito além
+                    deste checklist gratuito:
+                </p>
+
+                <div style="text-align: left; margin: 20px 0;">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✅</span>
+                        <span>11 capítulos completos sobre IA no trabalho</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✅</span>
+                        <span>+100 prompts prontos para todas as situações</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✅</span>
+                        <span>Plano de implementação 30-60-90 dias</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✅</span>
+                        <span>Acesso à comunidade exclusiva</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✅</span>
+                        <span>Atualizações gratuitas por 1 ano</span>
+                    </div>
+                </div>
+
+                <div class="upsell-price">
+                    <span style="text-decoration: line-through; font-size: 0.8em; opacity: 0.8;">De R$ 197,00</span><br>
+                    Por apenas R$ 5,90
+                </div>
+
+                <p style="margin: 15px 0; color: #666;">
+                    Menos que um café ☕ para transformar sua produtividade para sempre!
+                </p>
+
+                <a href="/" class="upsell-button">
+                    🚀 SIM! QUERO O EBOOK COMPLETO
+                </a>
+
+                <p style="font-size: 0.9rem; color: #888; margin-top: 15px;">
+                    ✓ Garantia de 7 dias<br>
+                    ✓ Acesso imediato<br>
+                    ✓ 100% seguro
+                </p>
+            </div>
+
+            <!-- Social Share -->
+            <div class="social-share">
+                <h4>💙 Ajude outros profissionais a descobrir a IA</h4>
+                <p style="color: #666; font-size: 0.95rem;">
+                    Compartilhe este checklist gratuito com seus colegas e amigos!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Auto scroll suave para o topo
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Opcional: Track de conversão (Google Analytics, Facebook Pixel, etc.)
+        // gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});
+    </script>
+
+</body>
+</html>
